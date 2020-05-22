@@ -65,9 +65,61 @@ body {
   height: 225px;
   display: flex;
 }
+.main__content__card__icon {
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__content__card__icon svg {
+  margin-bottom: 40px;
+}
+.main__content__card__content {
+  width: 68%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main__content__card__content__id {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ABABAB;
+}
 .main__content__card__content__text-joke {
   font-size: 18px;
   line-height: 26px;
+}
+.main__content__card__content__element {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__content__card__content__element__upd {
+  font-size: 10px;
+  line-height: 14px;
+  color: #ABABAB;
+  height: 15%;
+}
+.main__content__card__content__element__category {
+  background: #FFFFFF;
+  border-radius: 6px;
+  width: 107px;
+  height: 24px;
+  border: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.main__content__card a {
+  width: 5%;
+  height: 15%;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
