@@ -224,13 +224,17 @@ input[type="radio"]:checked {
 }
 
 .side-widget {
-  height: 100%;
+  height: 100vh;
   width: 32%;
   background: #F8F8F8;
   color: #ABABAB;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+  & .fav{
+    width: 90%;
+    margin: 30px auto auto;
+  }
 
   & .card {
     width: 90%;
@@ -239,7 +243,7 @@ input[type="radio"]:checked {
     border: 1px solid #F8F8F8;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-
+    margin-top: 15px;
     &__container {
 
       & .heart-icon {
@@ -249,7 +253,7 @@ input[type="radio"]:checked {
     }
 
     &__content {
-      &.static-icon {
+      & .static-icon {
         right: 393px;
       }
 

@@ -204,13 +204,17 @@ input[type=radio]:checked {
 }
 
 .side-widget {
-  height: 100%;
+  height: 100vh;
   width: 32%;
   background: #F8F8F8;
   color: #ABABAB;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
+}
+.side-widget .fav {
+  width: 90%;
+  margin: 30px auto auto;
 }
 .side-widget .card {
   width: 90%;
@@ -219,8 +223,9 @@ input[type=radio]:checked {
   border: 1px solid #F8F8F8;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin-top: 15px;
 }
-.side-widget .card__content.static-icon {
+.side-widget .card__content .static-icon {
   right: 393px;
 }
 .side-widget .card__content p:nth-of-type(2) {
