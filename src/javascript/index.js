@@ -71,3 +71,37 @@ categories.forEach(function (category) {
     category.classList.add("select");
   });
 });
+
+function findCheckedRadio() {
+  const nodeList = document.querySelectorAll('input[type="radio"]');
+  const radioArray = Array.from(nodeList);
+
+  const checkedButton = radioArray.filter(function (element) {
+    return element.checked;
+  });
+
+  return checkedButton[0];
+}
+
+function getCardTemplate() {
+  const cardTemplate = document.getElementById("card-template");
+  const card = cardTemplate.content.querySelector(".card");
+
+  return card.cloneNode();
+}
+
+async function getRandomJoke() {
+  const response = await fetch("https://api.chucknorris.io/jokes/random");
+  const json = await response.json();
+}
+
+async function handleJokeClick() {
+  const checkedRadio = findCheckedRadio();
+  const name = checkedRadio.id;
+
+  await getRandomJoke();
+}
+
+const jokeButton = document.getElementById("get-joke");
+
+jokeButton.addEventListener("click", handleJokeClick);
