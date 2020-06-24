@@ -90,14 +90,6 @@ function getCardTemplate() {
   return card.cloneNode(true);
 }
 
-async function handleJokeClick() {
-  const checkedRadio = findCheckedRadio();
-  const name = checkedRadio.id;
-
-  await getRandomJoke();
-}
-
-
 function fillCardTemplate(id, value, updatedAt, categories) {
   const template = getCardTemplate();
   const cardId = template.querySelector(".card__id");
