@@ -11,8 +11,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 .whole-wrapper {
@@ -23,20 +22,17 @@ body {
 .wrap {
   width: 100%;
   height: 100%;
-
 }
 
 .main {
   width: 68%;
   height: 100%;
 
-
   &__content {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 80%;
-
 
     & p {
       font-weight: bold;
@@ -82,13 +78,13 @@ body {
 .category {
   width: 85px;
   height: 28px;
-  border: 2px solid #F8F8F8;
+  border: 2px solid #f8f8f8;
   box-sizing: border-box;
   border-radius: 6px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #ABABAB;
+  color: #ababab;
   text-align: center;
   align-self: center;
   margin-left: 5px;
@@ -100,10 +96,9 @@ body {
   border-radius: 10px;
   font-size: 16px;
   line-height: 22px;
-  color: #ABABAB;
+  color: #ababab;
   width: 100%;
   height: 42px;
-
 }
 
 input[type="radio"] {
@@ -121,7 +116,7 @@ input[type="radio"]:checked {
 .select {
   width: 85px;
   height: 28px;
-  border: 2px solid #F8F8F8;
+  border: 2px solid #f8f8f8;
   box-sizing: border-box;
   border-radius: 6px;
   font-weight: 500;
@@ -130,7 +125,7 @@ input[type="radio"]:checked {
   text-align: center;
   align-self: center;
   margin-left: 5px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   color: #333333;
 }
 
@@ -139,7 +134,7 @@ input[type="radio"]:checked {
 }
 
 .btn-joke button {
-  background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+  background: linear-gradient(92.01deg, #8ea7ff 0%, #7291ff 100%);
   border-radius: 10px;
   width: 152px;
   height: 42px;
@@ -154,13 +149,12 @@ input[type="radio"]:checked {
 
 .card {
   width: 100%;
-  background: #F8F8F8;
+  background: #f8f8f8;
   border-radius: 20px;
   padding: 36px 52px 50px 81px;
   margin-top: 40px;
 
   &__container {
-
   }
 
   &__content {
@@ -175,7 +169,7 @@ input[type="radio"]:checked {
       font-weight: 500;
       font-size: 10px;
       line-height: 14px;
-      color: #ABABAB;
+      color: #ababab;
       text-transform: uppercase;
     }
 
@@ -194,7 +188,7 @@ input[type="radio"]:checked {
     &__upd {
       font-size: 10px;
       line-height: 14px;
-      color: #ABABAB;
+      color: #ababab;
     }
   }
 }
@@ -226,12 +220,12 @@ input[type="radio"]:checked {
 .side-widget {
   height: 100vh;
   width: 32%;
-  background: #F8F8F8;
-  color: #ABABAB;
+  background: #f8f8f8;
+  color: #ababab;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  & .fav{
+  & .fav {
     width: 90%;
     margin: 30px auto auto;
   }
@@ -240,16 +234,13 @@ input[type="radio"]:checked {
     width: 90%;
     margin: auto;
     background-color: #ffffff;
-    border: 1px solid #F8F8F8;
+    border: 1px solid #f8f8f8;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 15px;
     &__container {
-
       & .heart-icon {
-
       }
-
     }
 
     &__content {
@@ -263,5 +254,7 @@ input[type="radio"]:checked {
       }
     }
   }
+}
 
+.static-icon {
 }
