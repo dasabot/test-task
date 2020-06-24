@@ -27,35 +27,31 @@ body {
 .main {
   width: 68%;
   height: 100%;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
-
-    & p {
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 28px;
-      color: #333333;
-    }
-
-    .hey {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 44px;
-      color: #333333;
-      margin-top: 50px;
-    }
-
-    & span:nth-of-type(1) {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 44px;
-      color: #333333;
-    }
-  }
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+.main__content p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+}
+.main__content .hey {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+  margin-top: 50px;
+}
+.main__content span:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  color: #333333;
 }
 
 .radio-container {
@@ -64,10 +60,9 @@ body {
   line-height: 26px;
   color: #333333;
   margin-top: 30px;
-
-  & div {
-    margin-top: 10px;
-  }
+}
+.radio-container div {
+  margin-top: 10px;
 }
 
 .categories-container {
@@ -101,13 +96,13 @@ body {
   height: 42px;
 }
 
-input[type="radio"] {
+input[type=radio] {
   background: #333333;
   height: 20px;
   width: 20px;
 }
 
-input[type="radio"]:checked {
+input[type=radio]:checked {
   background: #333333;
   height: 20px;
   width: 20px;
@@ -153,44 +148,35 @@ input[type="radio"]:checked {
   border-radius: 20px;
   padding: 36px 52px 50px 81px;
   margin-top: 40px;
-
-  &__container {
-  }
-
-  &__content {
-    position: relative;
-
-    & p {
-      margin: 0;
-      padding: 0;
-    }
-
-    & p:nth-of-type(1) {
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 14px;
-      color: #ababab;
-      text-transform: uppercase;
-    }
-
-    & p:nth-of-type(2) {
-      font-size: 18px;
-      line-height: 26px;
-      color: #333333;
-    }
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__upd {
-      font-size: 10px;
-      line-height: 14px;
-      color: #ababab;
-    }
-  }
+}
+.card__content {
+  position: relative;
+}
+.card__content p {
+  margin: 0;
+  padding: 0;
+}
+.card__content p:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ababab;
+  text-transform: uppercase;
+}
+.card__content p:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__footer__upd {
+  font-size: 10px;
+  line-height: 14px;
+  color: #ababab;
 }
 
 .tag-category {
@@ -225,36 +211,28 @@ input[type="radio"]:checked {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  & .fav {
-    width: 90%;
-    margin: 30px auto auto;
-  }
-
-  & .card {
-    width: 90%;
-    margin: auto;
-    background-color: #ffffff;
-    border: 1px solid #f8f8f8;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 15px;
-    &__container {
-      & .heart-icon {
-      }
-    }
-
-    &__content {
-      & .static-icon {
-        right: 393px;
-      }
-
-      & p:nth-of-type(2) {
-        font-size: 14px;
-        line-height: 20px;
-      }
-    }
-  }
+}
+.side-widget .fav {
+  width: 90%;
+  margin: 30px auto auto;
+}
+.side-widget .card {
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.side-widget .card__content .static-icon {
+  right: 393px;
+}
+.side-widget .card__content p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.static-icon {
+body {
+  background: black;
 }
