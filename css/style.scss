@@ -12,15 +12,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+
+}
+
+.whole-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .wrap {
   width: 100%;
   height: 100%;
+
 }
 
 .main {
-  width: 70%;
+  width: 68%;
   height: 100%;
 
 
@@ -38,14 +45,15 @@ body {
       color: #333333;
     }
 
-    & span:first-of-type(1) {
+    .hey {
       font-weight: bold;
       font-size: 32px;
       line-height: 44px;
       color: #333333;
+      margin-top: 50px;
     }
 
-    & span:nth-of-type(2) {
+    & span:nth-of-type(1) {
       font-weight: 500;
       font-size: 24px;
       line-height: 44px;
@@ -59,6 +67,11 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #333333;
+  margin-top: 30px;
+
+  & div {
+    margin-top: 10px;
+  }
 }
 
 .categories-container {
@@ -125,11 +138,26 @@ input[type="radio"]:checked {
   display: none;
 }
 
+.btn-joke button {
+  background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
+  border: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
 .card {
   width: 100%;
   background: #F8F8F8;
   border-radius: 20px;
-  padding: 20px 30px 20px 60px;
+  padding: 36px 52px 50px 81px;
+  margin-top: 40px;
 
   &__container {
 
@@ -170,7 +198,8 @@ input[type="radio"]:checked {
     }
   }
 }
-.tag-category{
+
+.tag-category {
   border-radius: 6px;
   background: #ffffff;
   font-weight: 500;
@@ -180,6 +209,7 @@ input[type="radio"]:checked {
   text-transform: uppercase;
   color: #333333;
 }
+
 .heart-icon {
   margin-left: auto;
   width: 20px;
@@ -190,5 +220,44 @@ input[type="radio"]:checked {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: -43px;
+  left: -55px;
+}
+
+.side-widget {
+  height: 100%;
+  width: 32%;
+  background: #F8F8F8;
+  color: #ABABAB;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+
+  & .card {
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    &__container {
+
+      & .heart-icon {
+
+      }
+
+    }
+
+    &__content {
+      &.static-icon {
+        right: 393px;
+      }
+
+      & p:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
 }
