@@ -87,12 +87,7 @@ function getCardTemplate() {
   const cardTemplate = document.getElementById("card-template");
   const card = cardTemplate.content.querySelector(".card");
 
-  return card.cloneNode();
-}
-
-async function getRandomJoke() {
-  const response = await fetch("https://api.chucknorris.io/jokes/random");
-  const json = await response.json();
+  return card.cloneNode(true);
 }
 
 async function handleJokeClick() {
@@ -100,6 +95,43 @@ async function handleJokeClick() {
   const name = checkedRadio.id;
 
   await getRandomJoke();
+}
+
+
+function fillCardTemplate(id, value, updatedAt, categories) {
+  const template = getCardTemplate();
+  const cardId = template.querySelector(".card__id");
+  const text = template.querySelector(".card__joke-text");
+  const lastUpdate = template.querySelector(".card__last-update");
+  const category = template.querySelector(".tag-category");
+
+  cardId.innerText = id;
+  text.innerText = value;
+  lastUpdate.innerText = updatedAt;
+
+  if (categories.length !== 0) {
+    category.innerText = categories[0];
+  }
+
+  return template;
+}
+
+async function getRandomJoke() {
+  const response = await fetch("https://api.chucknorris.io/jokes/random");
+  const json = await response.json();
+  const card = fillCardTemplate(json.id, json.value, json.updated_at, json.categories);
+  
+  const cardsContainer = document.querySelector('.main__content');
+  cardsContainer.appendChild(card);
+}
+
+async function handleJokeClick() {
+  const checkedRadio = findCheckedRadio();
+  const name = checkedRadio.id;
+
+  if (name === "random") {
+    await getRandomJoke();
+  }
 }
 
 const jokeButton = document.getElementById("get-joke");
